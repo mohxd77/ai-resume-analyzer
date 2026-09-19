@@ -1,0 +1,6 @@
+test_id,resume,expected_top_role,expected_min_match_score
+TC01,SNEHA PATEL.docx,AI Engineer,100
+TC02,ARJUN REDDY.pdf,Data Analyst,100
+TC03,PRIYA KUMAR.docx,NLP Engineer,100
+TC04,RAHUL VERMA.pdf,Machine Learning Engineer,87.5
+TC05,ALEX SHARMA.docx,Data Analyst,100
