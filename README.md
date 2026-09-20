@@ -260,6 +260,7 @@ reports/
 ---
 ### 🔄 Project Workflow
 The overall workflow of the application is:
+```text
 Upload PDF or DOCX Resume
           ↓
 Extract Resume Text
@@ -283,9 +284,8 @@ Generate Learning Roadmap
 Display Results in Streamlit
           ↓
 Generate Downloadable PDF Report
-
----
-### 🧩 Project Modules
+```
+## 🧩 Project Modules
 
 Module 1: Resume Upload
 
@@ -295,7 +295,7 @@ Validating uploaded files.
 Passing the uploaded file to the resume parser.
 File:
 app.py
----
+
 Module 2: Resume Parsing
 
 Responsible for extracting text from:
@@ -313,7 +313,7 @@ Removing repeated spaces.
 Normalizing text.
 File:
 text_cleaner.py
----
+
 Module 4: Skill Extraction
 Responsible for:
 Loading the skill dictionary.
@@ -322,7 +322,7 @@ Extracting detected skills from the resume.
 Files:
 skill_extractor.py
 data/skill_dictionary.csv
----
+
 Module 5: Job Matching
 Responsible for:
 Loading job roles.
@@ -334,12 +334,12 @@ Producing job-role results.
 Files:
 job_matcher.py
 data/job_roles.csv
----
+
 Module 6: Learning Roadmap
 Responsible for generating learning recommendations based on missing skills.
 File:
 roadmap_generator.py
----
+
 Module 7: Streamlit Dashboard
 
 The Streamlit application provides:
@@ -353,8 +353,9 @@ Learning roadmap.
 PDF report download option.
 Main file:
 app.py
----
-### 📁 Project Structure
+
+## 📁 Project Structure
+```text
 ai_resume_analyzer/
 │
 ├── app.py
@@ -387,8 +388,8 @@ ai_resume_analyzer/
 │
 └── tests/
     └── test_cases.csv
----
-### ⚙️ Installation
+```
+## ⚙️ Installation
 1. Clone or download the project
 Download the project source code and open the project folder in VS Code.
 2. Create a virtual environment
@@ -399,8 +400,8 @@ venv\Scripts\activate
 4. Install dependencies
 Install all required Python packages using:
 pip install -r requirements.txt
----
-### ▶️ Running the Application
+
+## ▶️ Running the Application
 Make sure the virtual environment is activated.
 Run:
 streamlit run app.py
@@ -418,8 +419,8 @@ The generated analysis reports are stored in:
 reports/
 The test cases are documented in:
 tests/test_cases.csv
----
-### 📊 Sample Testing Results
+
+## 📊 Sample Testing Results
 The application was tested using resumes representing different technical skill profiles.
 Sneha Patel
 The analysis identified skills related to:
@@ -500,7 +501,7 @@ Statistics
 
 The generated report showed:
 Data Analyst: 100%
----
+
 ### 📄 Sample Reports
 The generated PDF reports are included in the project under:
 reports/
@@ -512,7 +513,7 @@ Match percentages.
 Matched skills.
 Missing skills.
 Learning roadmaps.
----
+
 
 ### 🧪 Testing File
 
@@ -526,7 +527,7 @@ TC02,ARJUN REDDY.pdf,Data Analyst,100
 TC03,PRIYA KUMAR.docx,NLP Engineer,100
 TC04,RAHUL VERMA.pdf,Machine Learning Engineer,87.5
 TC05,ALEX SHARMA.docx,Data Analyst,100
----
+
 ### 🔐 Responsible AI
 This application is designed for educational and career guidance purposes.
 
@@ -538,7 +539,7 @@ Match scores are estimates and should not be treated as recruiter decisions.
 Missing keywords do not necessarily mean missing ability.
 Uploaded resumes should be handled responsibly.
 Temporary uploaded resume data should not be stored permanently without user permission.
----
+
 
 ### ⚠️ Limitations
 The current system has some limitations:
@@ -550,7 +551,7 @@ The system does not determine a person's actual ability solely from keywords.
 The predefined job-role dataset contains a limited number of roles.
 The learning roadmap provides basic educational guidance rather than a complete professional curriculum.
 Match scores should not be interpreted as recruitment decisions.
----
+
 
 ### 🚀 Future Enhancements
 Possible future improvements include:
@@ -570,9 +571,10 @@ Docker deployment.
 Cloud deployment.
 Feedback-based improvement of the skill dictionary.
 AI-generated resume feedback.
----
+
 ### Possible Advanced Architecture
 The current project can be extended using the following architecture:
+```text
                   ┌─────────────────────┐
                   │   User / Student    │
                   └──────────┬──────────┘
@@ -633,7 +635,7 @@ The current project can be extended using the following architecture:
                   ┌─────────────────────┐
                   │ Download PDF Report │
                   └─────────────────────┘
----
+```
 ### 📦 Final Deliverables
 
 The final project contains:
@@ -651,11 +653,11 @@ Architecture/workflow documentation.
 Downloadable resume analysis report feature.
 GitHub repository.
 Short project report.  
----
+
 ### 👨‍💻 Project Status
 
 Status: Working Prototype / Educational Project
-
+```text
 The current version supports:
 Resume Upload
       ↓
@@ -676,8 +678,7 @@ Learning Roadmap
 PDF Analysis Report
       ↓
 Download Report
----
+```
 
 ### 📜 License
 This project is developed for educational and academic purposes.
----
